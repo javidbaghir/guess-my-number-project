@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+  </head>
+  <body class="bg-black">
+    <div class="container mx-auto py-[30px]">
+      <div class="flex justify-between">
+        <button id="again" class="h-[40px] px-[20px] text-black bg-white">Again!</button>
+        <p class="text-white">(Between 1 and 20)</p>
+      </div>
+
+      <div class="flex items-center justify-center">
+        <span class="text-white text-[40px] mt-[40px]">Guess My Number!</span>
+      </div>
+
+      <div class="guess-number">
+        <span id="random-number">?</span>
+      </div>
+
+      <div class="mt-[90px] flex justify-between px-[90px]">
+        <div class="flex flex-col items-start justify-center space-y-[10px]">
+          <input id="guess"
+            type="number"
+            class="border outline-none h-[60px] w-[200px] bg-transparent text-white px-[10px]"
+          />
+          <button id="check" class="bg-white text-black h-[35px] w-[130px]">Check!</button>
+        </div>
+
+        <div>
+          <p id="message" class="text-white mb-[40px]">Start Gueessing...</p>
+          <p class="text-white mb-[10px]">Score: <span id="score-number">20</span></p>
+          <p class="text-white">Highscore: <span id="highscore">0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
